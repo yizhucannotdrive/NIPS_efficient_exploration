@@ -28,7 +28,10 @@ def solveStationary( A ):
     a = np.eye( n ) - A
     a = np.vstack( (a.T, np.ones( n )) )
     b = np.matrix( [0] * n + [ 1 ] ).T
-    return np.linalg.lstsq( a, b )[0]
+    return np.linalg.lstsq( a, b, rcond = None )[0]
+    #return np.linalg.lstsq( a, b )[0]
+
+
 def main():
     #collect data with random policy
     n_s = 6

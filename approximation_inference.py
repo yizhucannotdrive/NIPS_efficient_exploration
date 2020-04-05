@@ -144,7 +144,7 @@ def main():
     num_rep = 10
     initial_s_dist = "even"
     # collect data configuration
-    num_data = 1000000
+    num_data = 10000
     print("num_data is {}".format(num_data))
     s_0 = 2
     # value-iteration configuration

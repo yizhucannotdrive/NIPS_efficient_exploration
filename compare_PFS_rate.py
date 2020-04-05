@@ -13,7 +13,7 @@ def main():
     Q_approximation = None
     right_props = [0.4, 0.6, 0.7 ,0.8, 0.99]
     # collect data configuration
-    n_s = 10
+    n_s = 5
     print("n_s is {}".format(n_s))
     n_a = 2
     # value-iteration configuration
@@ -23,7 +23,7 @@ def main():
     p = np.zeros(n_s * n_a * n_s)
     Q_0 = np.zeros(n_s * n_a)
     r = np.zeros(n_s * n_a)
-    r[0] = 0.1
+    r[0] = 1
     r[-1] = 10.
     p[0 * n_s * n_a + 0 * n_s + 0] = 1.
     p[0 * n_s * n_a + 1 * n_s + 0] = 0.7
